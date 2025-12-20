@@ -1,0 +1,85 @@
+<!-- cita.html -->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BUDU - Mes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg">
+  <div class="overlay"></div>
+
+  <header class="header headerSmall">
+    <a class="backBtn" href="index.html">←</a>
+
+    <div class="brand brandRow">
+      <div class="brandLeft">
+        <div class="logoText">BUDU</div>
+        <img class="brandLogo" src="img/LOGO.png" alt="" />
+      </div>
+      <div class="subtitle">12 citas, un solo fin, amarte siempre ❤️‍🩹</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="detail">
+      <div class="detailHead">
+        <h1 id="tituloMes">Mes</h1>
+        <p class="muted">Ya falta poco 🥺</p>
+      </div>
+
+      <section class="countdownCard" aria-label="Contador">
+        <div class="timeRow" role="group" aria-label="Cuenta regresiva">
+          <div class="timeBox">
+            <div id="cdDays" class="timeNum">--</div>
+            <div class="timeLbl">Días</div>
+          </div>
+          <div class="timeBox">
+            <div id="cdHours" class="timeNum">--</div>
+            <div class="timeLbl">Horas</div>
+          </div>
+          <div class="timeBox">
+            <div id="cdMins" class="timeNum">--</div>
+            <div class="timeLbl">Min</div>
+          </div>
+          <div class="timeBox">
+            <div id="cdSecs" class="timeNum">--</div>
+            <div class="timeLbl">Seg</div>
+          </div>
+        </div>
+      </section>
+
+      <div class="photoGrid">
+        <article class="photoWrap">
+          <div class="polaroid tiltL">
+            <div class="shot">
+              <img id="imgPlan" class="shotImg" alt="" />
+            </div>
+          </div>
+        </article>
+
+        <article class="photoWrap">
+          <div class="polaroid tiltR">
+            <div class="shot">
+              <img id="imgHecho" class="shotImg" alt="" />
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>Siempre juntos 💕</span>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
